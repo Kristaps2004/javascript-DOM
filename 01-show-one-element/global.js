@@ -1,5 +1,15 @@
 window.addEventListener("load", function(){
+  console.log('page is loaded')
+  const moreLink = document.getElementById('more_text_link');
+  const moreText = document.getElementById('more_text_content');
 
+  moreText.style.display = 'none';
+
+  moreLink.addEventListener('click', function(){
+    moreText.style.display = 'initial';
+    moreLink.style.display = 'none';
+  });
+});
   // Here is some pseudo-code to help you get started:
 
   // 1. Get the DOM element which will be clicked.
@@ -14,4 +24,3 @@ window.addEventListener("load", function(){
 
   // 5. Also modify the DOM to hide the "More info..." link.
   
-});
