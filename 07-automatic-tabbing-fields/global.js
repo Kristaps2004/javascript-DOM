@@ -1,9 +1,9 @@
 // Your JavaScript goes here.
 window.addEventListener('load', function(){
 
-  const first = document.getElementById('first');
-  const second = document.getElementById('second');
-  const third = document.getElementById('third');
+  var first = document.getElementById('first');
+  var second = document.getElementById('second');
+  var third = document.getElementById('third');
 
   first.addEventListener('input', function(e){
       if(first.value.length == first.maxLength){
